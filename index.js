@@ -76,3 +76,14 @@ function convertUnits() {
 }
 
 convertBtn.addEventListener("click", convertUnits);
+
+const clearBtn = document.getElementById("clear-btn");
+
+clearBtn.addEventListener("click", () => {
+  conversionEl.classList.add("fade-out");
+  setTimeout(() => {
+    inputEl.value = "";
+    conversionEl.textContent = "";
+    conversionEl.classList.remove("glow", "fade-out");
+  }, 400);
+});

@@ -87,3 +87,10 @@ button:hover {
   box-shadow: 0 0 15px #c084fc;
   opacity: 1;
 }
+
+/*Fade*/
+
+.fade-out {
+  opacity: 0;
+  transition: opacity 0.4s ease-out;
+}
