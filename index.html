@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="phone-container">
+      <h1>Metric/Imperial Unit Conversion</h1>
+
+      <input
+        type="number"
+        id="input-value"
+        placeholder="Enter value"
+        min="0"
+        step="any"
+      />
+
+      <select id="unit-select">
+        <option value="meter">Meters</option>
+        <option value="liter">Liters</option>
+        <option value="kilogram">Kilograms</option>
+      </select>
+
+      <button id="convert-btn">Convert</button>
+
+      <div id="results">
+        <div id="conversion-el" class="result-box"></div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
